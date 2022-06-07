@@ -82,10 +82,10 @@
             <th>id</th>
             <th>Name</th>
             <th>Location</th>
-            <th>Manager</th>
-            <th>Manager feedback</th>
-    
+            <th>Initiator Name</th>            
+            <th>Description</th>
             <th>Suggestions</th>
+            <th>Process</th>
             
             </tr>";
 
@@ -98,11 +98,8 @@
             echo "<td>" . $row['Smanager'] . "</td>";
              echo "<td>" . $row['manager'] . "</td>";
             echo "<td>" . $row['suggestions'] . "</td>";
-            <td class="actions">
-                   
-                    <a href="delete.php?id=<?=$poll['id']?>" class="trash"><i class="fas fa-trash fa-xs"></i></a>
-                </td>
-           
+            echo "<td>" .$row['name_value'] . "</td>";
+          
              
             echo "</tr>";
             }

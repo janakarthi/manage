@@ -11,7 +11,7 @@ $name_value = $_POST['name_value'];
 
 
 $query = mysqli_query($con, "INSERT INTO `poll`(`id`, `name`, `feedback`, `suggestions`,`manager`,`Smanager`,`name_value`) VALUES ('','$name','$view','$comments','$manager', '$Smanager', '$name_value')");
-echo '<script>alert("Thank You..! Your Feedback is Valuable to Us"); location.replace(document.referrer);</script>';
+echo '<script>alert("Yout Metting scheduled"); location.replace(document.referrer);</script>';
 
 
 
